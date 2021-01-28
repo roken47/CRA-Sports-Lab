@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import ScoreBoard from '../scoreboard/ScoreBoard';
 import Team from '../team/Team';
 
-const soundShot = require('../../assets/sounds/bat+hit+ball.mp3');
-const soundScore = require('../../assets/sounds/Ball+Hit+Cheer.mp3')
+import soundShot from '../../assets/sounds/bat+hit+ball.mp3';
+import soundScore from '../../assets/sounds/Ball+Hit+Cheer.mp3';
 
 class Game extends Component {
     constructor(props) {

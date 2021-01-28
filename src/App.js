@@ -1,41 +1,45 @@
 import React from 'react';
 import './App.css';
 import Game from './components/game/Game';
-
+//Team Logos
+import fnaticLogo from './assets/images/Fnatic.png';
+import naviLogo from './assets/images/Natus_Vincere.png';
+import liquidLogo from './assets/images/Team_Liquid.png';
+import cloudLogo from './assets/images/C9.png';
 
 
 function App(props) {
-  const raccoons = {
-    name: 'Russiaville Raccoons',
-    logoSrc: './assets/images/raccoon.png'
+  const fnatic = {
+    name: 'Fnatic',
+    logoSrc: fnaticLogo
   }
 
-  const squirrels = {
-    name: 'Sheridan Squirrels',
-    logoSrc: './assets/images/squirrel.png'
+  const navi = {
+    name: 'Natus Vincere',
+    logoSrc: naviLogo
   }
 
-  const bunnies = {
-    name: 'Burlington Bunnies',
-    logoSrc: './assets/images/bunny.png'
+  const liquid = {
+    name: 'Team Liquid',
+    logoSrc: liquidLogo
   }
 
-  const hounds = {
-    name: 'Hammond Hounds',
-    logoSrc: './assets/images/hound.png'
+  const cloudNine = {
+    name: 'Cloud 9',
+    logoSrc: cloudLogo
   }
 
   return (
     <div className="App">
       <Game
-        venue="Union 525 Gem"
-        homeTeam={squirrels}
-        visitingTeam={raccoons}
+        venue="Lanxess Arena"
+        homeTeam={fnatic}
+        visitingTeam={navi}
       />
       <Game
-        venue="Sheridan Arena"
-        homeTeam={bunnies}
-        visitingTeam={hounds}
+        venue="Spodek Arena"
+        homeTeam={liquid}
+        visitingTeam={cloudNine}
       />
     </div>
   )
